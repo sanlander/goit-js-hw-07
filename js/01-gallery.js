@@ -42,7 +42,6 @@ function onOpenImg(e) {
   function onKey(e) {
     if (e.key === "Escape") {
       instance.close();
-      console.dir(e.key);
       window.removeEventListener("keydown", onKey);
     }
   }

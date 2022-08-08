@@ -1,8 +1,6 @@
 import { galleryItems } from "./gallery-items.js";
 // Change code below this line
 
-// console.log(galleryItems);
-
 const refs = {
   boxGallery: document.querySelector(".gallery"),
 };
@@ -28,10 +26,9 @@ function onClickImg(e) {
   if (e.target.nodeName !== "IMG") {
     return;
   }
-  //   console.log(e.target.src);
-
-  let gallery = new SimpleLightbox(".gallery a", {
-    captionsData: "alt",
-    captionDelay: 250,
-  });
 }
+
+let gallery = new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
+  captionDelay: 250,
+});
